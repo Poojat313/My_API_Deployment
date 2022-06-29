@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<title>Distance</title>
+</head>
+<body>
+	<h1 style="text-align: center;background-color: black;color: white;">Distance between two locations(km)</h1>
+	<br><br><br><br>
+	<div>
+		<!-- {% for item in data%}
+			{% endfor %} -->
+		<table class="table table-hover" style="background-color: aqua;">
+			<thead>
+			<tr>
+				<th>Location_1</th>
+				<th>Location_2</th>
+				<th>Distance_bet_locations_in_km</th>
+			</tr>
+			</thead>
+			<tbody>
+			{% for item in data%}
+			<tr>
+				<td>{{item[0]}}</td>
+				<td>{{item[1]}}</td>
+				<td>{{item[2]}}</td>                   
+			</tr>
+			{% endfor %} 
+			</tbody>
+		</table>
+	</div></h1>
+</body>
+</html>
